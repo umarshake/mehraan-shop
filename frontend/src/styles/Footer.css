@@ -1,7 +1,134 @@
 .footer {
-    margin-top: 10px;
-    padding: 10px;
-    background: #00bce0;
+    margin: 0;
+    padding: 0;
+    background: #719fb0;
+    min-height: 100vh;
     width: 100%;
-    bottom: 10px;
+}
+
+footer * {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.row {
+    padding: 1em 1em;
+}
+
+.row.primary {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    align-items: stretch;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+}
+
+footer h3 {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+footer li:not(:first-child) {
+    margin-top: 0.8em;
+}
+
+footer ul li a {
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #2a8ded;
+}
+
+footer .about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+}
+
+footer input,
+footer button {
+    font-size: 1em;
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+footer button {
+    background-color: #c7940a;
+    color: #ffffff;
+}
+
+footer div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+}
+
+.social svg {
+    color: #e6e9ee;
+}
+
+.copyright {
+    padding: 0.3em 1em;
+    background-color: #25262e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-menu {
+    margin-top: 10px;
+}
+
+.footer-menu a {
+    color: #cfd2d6;
+    padding: 6px;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    color: #27bcda;
+}
+
+.copyright p {
+    font-size: 0.9em;
+    text-align: left;
+    color: #cfd2d6;
+}
+
+
+@media screen and (max-width: 640px) {
+    .row.primary {
+        grid-template-columns: 1fr;
+    }
+
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
